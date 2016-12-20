@@ -1,0 +1,483 @@
+/**
+Theme Name: Take Off
+Author: Tessa Kriesel
+Author URI: http://www.tessak22.com
+Description: Wordpress theme based on Underscores built with Twitter Bootstrap.
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+/* =============== HTML, Body & Generals =============== */
+html {
+    min-height: 100%;
+    position: relative;
+}
+body {
+    font-size: 16px;
+    transition: all 0.25s cubic-bezier(0.54, 0.12, 0.2, 1) 0s;
+}
+a {
+
+}
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+a:focus,
+a img,
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 0 none; /*Chrome Outline Fix*/
+}
+a.click-to-call,
+a.click-to-call:visited,
+a.click-to-call:hover,
+a.click-to-call:active {
+    color: inherit;
+    text-decoration: inherit;
+}
+p {
+    margin: 0.625em 0;
+    line-height: 1.6em;
+}
+h1 {
+    font-size: 3.750em;
+    margin: 0.625em 0;
+}
+h2 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0.625em 0;
+}
+h3 {
+    font-size: 1.25em;
+    line-height: 1.25em;
+    margin: 0.625em 0;
+}
+h4 {
+    font-size: 1.125em;
+    line-height: 1.25em;
+    margin: 0.938em 0;
+}
+h5 {
+    font-size: 1em;
+    line-height: 1.125em;
+    text-transform: uppercase;
+    margin: 0.938em 0;
+}
+h6 {
+    font-size: 1em;
+    line-height: 1.125em;
+    margin: 0.938em 0;
+}
+ul, ol {
+    margin: 1.250em 0 0.625em;
+}
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+    margin-top: 1.875em;
+}
+button {
+    font-weight: normal;
+    font-size: 0.875em;
+    line-height: 1.42857;
+    text-align: center;
+    color: #ffffff;
+    white-space: nowrap;
+    background-color: #337ab7;
+    border: 1px solid #2e6da4;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 0;
+    padding: 0.375em 0.750em;
+    display: inline-block;
+    vertical-align: middle;
+}
+button:hover, button:focus {
+    color: #ffffff;
+    background-color: #23527c;
+    border-color: #2e6da4;
+}
+
+/* =============== Site Header =============== */
+.site-header {
+    padding-top: 1.250em;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    padding-bottom: 20px;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Utility*/
+.utility {
+    position: relative;
+    top: 40px;
+}
+
+/* Nav Secondary */
+.nav-secondary {
+    text-align: right;
+    float: right;
+    position: absolute;
+    top: 20px;
+}
+.nav-secondary ul {
+    list-style: none;
+    padding: 0;
+}
+.nav-secondary li {
+    display: inline-block;
+    padding: 0 0.25em;
+}
+.nav-secondary li a {
+    font-size: 20px;
+}
+
+/*Search Box*/
+.search-box {
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+/* Name Me */
+.name-me p {text-align: right;}
+
+/* =============== Main Navigation =============== */
+.nav {
+    z-index: 10;
+}
+.nav > li {
+    display: inline-block;
+}
+
+.toggle-nav {
+    font-size: 30px;
+    color: #337ab7;
+    cursor: pointer;
+    display: none;
+}
+
+/* =============== Content & Sidebar =============== */
+
+/* Content Structural */
+.content {
+    margin-bottom: 1.250em;
+}
+.sidebar {
+    margin-bottom: 1.250em;
+}
+
+/* Document Header / Page Title*/
+.document-header {
+    background: #F5F5F5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    padding: 1.250em 0;
+    margin: 1.250em 0;
+}
+.document-header h1 {
+
+}
+
+/* Breadcrumbs */
+.nav-breadcrumbs {
+
+}
+.nav-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+}
+.nav-breadcrumbs li {
+    display: inline-block;
+}
+.nav-breadcrumbs li:before {
+    content: '\00a0\003E\00a0'; /* &gt; */
+}
+.nav-breadcrumbs li:first-child:before {
+    content: '';
+}
+.nav-breadcrumbs li a {
+
+}
+
+/* Style Guide / Wysiwyg Content */
+.content h2 {
+
+}
+.content h3 {
+
+}
+.content h4 {
+
+}
+.content h5 {
+
+}
+.content h6 {
+
+}
+.content ul ul,
+.content ul ol,
+.content ol ul,
+.content ol ol {
+    margin-top: .5em;
+    margin-bottom: 0;
+}
+.content li {
+    line-height: 1.333;
+    margin-bottom: .5em;
+}
+.content .introduction {
+    font-size: 2em;
+    font-style: italic;
+    line-height: 1.25;
+    margin-bottom: 1.875em;
+}
+.content p.introduction + h2,
+.content p.introduction + h3,
+.content p.introduction + h4,
+.content p.introduction + h5,
+.content p.introduction + h6 {
+    margin-top: 0.938em;
+}
+.content .callout {
+    font-style: italic;
+    padding: 0.938em 3.125em;
+}
+.content .callout a {
+
+}
+.content .callout a:visited,
+.content .callout a:hover,
+.content .callout a:active {
+
+}
+.content .footnote {
+    font-size: 0.85em;
+    font-style: italic;
+    line-height: 1.3;
+    margin-top: 1.250em;
+}
+.content .footnote a {
+
+}
+.content .footnote a:visited,
+.content .footnote a:hover,
+.content .footnote a:active {
+
+}
+.content .call-to-action {
+    font-weight: bold;
+    margin: 1.250em 0;
+}
+.content .call-to-action a:after {
+    content: '\f101';
+    font-family: "FontAwesome";
+    padding-left: 0.313em;
+}
+.content .call-to-action a {
+
+}
+.content .call-to-action a:hover,
+.content .call-to-action a:active,
+.content .call-to-action a:visited {
+
+}
+.content .call-to-action a:after,
+.content .call-to-action a:after:hover,
+.content .call-to-action a:after:active,
+.content .call-to-action a:after:visited {
+
+}
+.article-header {
+
+}
+.article-header h1 {
+
+}
+.article-header h1 a {
+
+}
+
+/* Wordpress Alignments */
+.alignleft {
+    margin-right: 1.5em;
+    float: left;
+    display: inline;
+}
+.alignright {
+    margin-left: 1.5em;
+    float: right;
+    display: inline;
+}
+.aligncenter {
+    margin: 0 auto;
+    display: block;
+    clear: both;}
+
+/* Article Meta & Pagination */
+.nav-article-meta {
+
+}
+.nav-article-meta ul {
+    list-style: none;
+    padding: 0;
+}
+.nav-article-meta li {
+    display: inline;
+    padding-right: 15px;
+}
+.nav-article-meta li:before {
+    /*content: '\00a0\2013\00a0'; /* &ndash; */
+}
+.nav-article-meta li:first-child:before {
+    content: '';
+}
+.nav-article-meta li a {
+
+}
+.nav-prevnext {
+    margin: .5em 0;
+    overflow: hidden;
+}
+.nav-prevnext ul {
+    list-style: none;
+    padding: 0;
+}
+.nav-prevnext li {
+    width: 40%;
+    float: left;
+}
+.nav-prevnext li.nav-item-next {
+    text-align: right;
+    float: right;
+}
+.nav-prevnext li a {
+
+}
+.nav-prevnext li.nav-item-prev a:before {
+
+}
+.nav-prevnext li.nav-item-next a:after {
+
+}
+.nav-pagination {
+    overflow: hidden;
+    margin: .5rem 0;
+}
+.nav-pagination ul {
+    list-style: none;
+    padding: 0;
+}
+.nav-pagination li {
+    display: inline-block;
+}
+.nav-pagination ul.page-numbers li:first-child {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border: 1px solid #dddddd;
+}
+.nav-pagination ul.page-numbers li {
+    float: left;
+    border: 1px solid #ddd;
+    border-left: none;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+.nav-pagination ul.page-numbers li:last-child {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+
+/* Search Form */
+.searchform {
+
+}
+.searchform label {
+
+}
+.searchform .input-group {
+    width: 100%;
+    max-width: 500px;
+}
+.searchform input {
+
+}
+.searchform button {
+
+}
+.navbar-form {
+    padding-left: 0;
+}
+
+/* Comments */
+.comment-form .form-submit,
+.comment-form .form-allowed-tags {
+    display: none;
+}
+.comment-form .form-group {
+    width: 90%;
+    max-width: 500px;
+}/* most of these are defined in functions.php */
+
+
+/*Your custom content styling should start here. We have all of our generics above
+but now its time for the custom stuff!*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============== Retina =============== */
+@media
+    (-webkit-min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (-webkit-min-device-pixel-ratio: 1.3),
+    (-webkit-min-device-pixel-ratio: 1.5),
+    (min-resolution: 192dpi),
+    (min-resolution: 144dpi),
+    (min-resolution: 120dpi),
+    (min-resolution: 124.8dpi) {
+        .exempli-gratia {
+            background-image: url('./images/example.png');
+            background-size: 123px auto;
+    }
+}
+
+/* =============== Print Styles =============== */
+@media print {
+    * { background: transparent !important; color: black !important; box-shadow: none !important; text-shadow: none !important; filter: none !important; -ms-filter: none !important; }
+    @page { margin: 0.5cm; }
+    /* a, a:visited { text-decoration: underline; } */
+    a[href]:after { content: " (" attr(href) ")"; }
+    abbr[title]:after { content: " (" attr(title) ")"; }
+    a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { display: table-header-group; }
+    tr, img { page-break-inside: avoid; }
+    img { max-width: 100% !important; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3 { page-break-after: avoid; }
+    .site-header .logo a:after { content: ''; }
+}
