@@ -20,3 +20,35 @@ jQuery(document).ready(function($){
 	    });
 
 });
+
+
+//Initiate Slick Slider for Reviews
+$('.reviews').slick({
+	dots: false,
+	infinite: true,
+	speed: 500,
+	fade: true,
+	cssEase: 'linear'
+});
+
+//Initiate Masonry for Project Grid
+$('.projects').masonry({
+  itemSelector: '.project-item',
+});
+
+
+// Animate page bookmarks
+$(function() {
+	$('a[href*="#"]:not([href="#"])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  	var target = $(this.hash);
+		  	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  	if (target.length) {
+			    $('html, body').animate({
+			      scrollTop: target.offset().top
+			    }, 1000);
+			    return false;
+		  	}
+		}
+	});
+});

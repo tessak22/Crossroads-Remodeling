@@ -8,29 +8,31 @@
 
 get_header(); ?>
 
-<header class="document-header">
-    <div class="container">
-        <div class="row">
-            <div class="page-title col-md-12">
-                <h1><?php the_title(); ?></h1>
-            </div>
-            <?php get_template_part('nav', 'breadcrumbs'); ?>
+<section id="about">
+    <div class="container-fluid">
+        <div class="content col-sm-10 col-sm-offset-1" role="main">
+            <?php
+            while (have_posts()) {
+                the_post();
+                get_template_part('content');
+            }
+            ?>
         </div>
     </div>
-</header>
+</section>
 
-<main class="site-main container">
-
-<div class="container-columns row">
-    <div class="content col-sm-9" role="main">
-        <?php
-        while (have_posts()) {
-            the_post();
-            get_template_part('content');
-        }
-        ?>
+<section id="projects">
+    <div class="container-fluid">
+        <div class="projects col-sm-10 col-sm-offset-1">
+            <?php get_template_part('inc', 'projects');?>
+        </div>
     </div>
-    <?php get_sidebar(); ?>
-</div>
+</section>
+
+<section id="reviews">
+    <div class="container-fluid">
+        <?php get_template_part('inc', 'reviews');?>
+    </div>
+</section>
 
 <?php get_footer(); ?>

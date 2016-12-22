@@ -443,7 +443,7 @@ function do_add_editor_styles()
 /**
  * [optional] custom post types
  */
-//add_action('init', 'wd_register_custom_post_types', 0);
+add_action('init', 'wd_register_custom_post_types', 0);
 function wd_register_custom_post_types()
 {
     $arr_custom_post_type_options = array(
@@ -456,10 +456,10 @@ function wd_register_custom_post_types()
          ),
          */
         array(
-            'label' => 'staff',
-            'singular' => 'Staff Profile',
-            'plural' => 'Staff Profiles',
-            'supports' => array('title', 'editor', 'custom-fields', 'page-attributes'),
+            'label' => 'reviews',
+            'singular' => 'Review',
+            'plural' => 'Reviews',
+            'supports' => array('title', 'editor', 'page-attributes'),
         ),
     );
     foreach ($arr_custom_post_type_options as $cpt_opts) {
@@ -519,3 +519,6 @@ function takeoff_get_posts_section_title()
     }
     return $ret;
 }
+
+// Hide Admin Bar on Front Side
+show_admin_bar( false );
