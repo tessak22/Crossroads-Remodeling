@@ -12,6 +12,9 @@ get_header(); ?>
 
     <section id="intro">
         <div class="container-fluid">
+            <div class="menu-toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
             <div class="intro col-sm-8 col-sm-offset-2">
                 <h2>Affordable, high quality construction with a company that stands behind their work.</h2>
                 <a class="btn btn-primary" href="#about">Learn More</a>

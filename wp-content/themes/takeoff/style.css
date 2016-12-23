@@ -443,6 +443,11 @@ h1, h2, h3, h4, h5 {text-transform: uppercase; margin: 0;}
 h6 {font-weight: 300;}
 a {transition: all 0.3s ease-in-out 0s;}
 
+/* Selection Text Styles */
+::-webkit-selection {background: #ab0534; color: #fff; text-shadow: none;}
+::-moz-selection    {background: #ab0534; color: #fff; text-shadow: none;}
+::selection         {background: #ab0534; color: #fff; text-shadow: none;}
+
 /*Forms*/
 .btn-primary {background-color: #ab0534; border-color: #fff; border-radius: 0; border-width: 2px; color: #fff; text-transform: uppercase; font-size: 1em; padding: 10px 25px;}
 .btn-primary.focus, .btn-primary:focus, .btn-primary:hover {background-color: #333; border-color: #fff;}
@@ -453,6 +458,7 @@ a {transition: all 0.3s ease-in-out 0s;}
 #site-container {width: 100%; position: relative;}
 #sidebar {position: fixed; width: 270px; height: 100vh; top: 0; background: #333; padding-top: 50px; color: #fff;}
 #content {margin-left: 270px; background: #fff;}
+.menu-toggle {display: none;}
 
 /* Sidebar */
 #sidebar a {color: #fff;}
