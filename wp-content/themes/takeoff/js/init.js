@@ -56,3 +56,7 @@ $(function() {
 $('.menu-toggle').click(function() {
     $('body').toggleClass("nav-open");
 });
+
+$('.nav > li > a').click(function() {
+    $('body').toggleClass("nav-open");
+});
