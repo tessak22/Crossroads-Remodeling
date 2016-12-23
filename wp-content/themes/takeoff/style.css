@@ -487,7 +487,6 @@ section img {max-width: 100%; height: auto;}
 #projects {background:  url('images/concrete-bg.jpg') no-repeat fixed center / cover;}
 #projects h2 {text-shadow: 1px 3px 3px rgba(255,255,255,0.85);}
 .project-item {margin-bottom: 25px;}
-.project-item:nth-child(3n) {margin-right: 0;}
 .project-content {position: relative;}
 .project-content h4 {text-align: center; color: #fff; letter-spacing: 1px; background: rgba(0,0,0,.75); position: absolute; bottom: 0; width: 100%; padding: 10px 0;}
 
