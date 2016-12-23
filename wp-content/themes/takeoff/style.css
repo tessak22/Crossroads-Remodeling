@@ -438,50 +438,73 @@ button:hover, button:focus {
 /*Your custom content styling should start here. We have all of our generics above
 but now its time for the custom stuff!*/
 
-body {font-family: 'Roboto', sans-serif; background: url('images/wood-bg.jpg') no-repeat fixed center /cover}
-h1, h2, h3, h4, h5 {text-transform: uppercase;}
+body {font-family: 'Roboto', sans-serif;}
+h1, h2, h3, h4, h5 {text-transform: uppercase; margin: 0;}
 h6 {font-weight: 300;}
+a {transition: all 0.3s ease-in-out 0s;}
 
-/************ Header **************/
-/* Main Menu */
-header {padding-top: 15px; background: url('images/body-bg.png') no-repeat fixed top left /cover, url('images/intro.jpg') no-repeat fixed center / cover; min-height: 100vh; position: relative;}
-header .nav {float: right;}
-.nav > li {}
-.nav > li > a {text-transform: uppercase; color: #fff; font-size: 1.250em; font-weight: 500; text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5); padding: 10px 25px;}
-.nav > li > a:focus, .nav > li > a:hover {background: transparent;}
-/* Logo */
-.logo {padding-left: 5%;}
+/*Forms*/
+.btn-primary {background-color: #ab0534; border-color: #fff; border-radius: 0; border-width: 2px; color: #fff; text-transform: uppercase; font-size: 1em; padding: 10px 25px;}
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {background-color: #333; border-color: #fff;}
+.form-control {background: #000; border: 3px solid #fff; border-radius: 0; color: #fff; font-size: 1em; height: 50px;}
+.form-control:focus {border-color: #AB0534; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(171, 5, 52, 0.6);}
+
+/* Containers */
+#site-container {width: 100%; position: relative;}
+#sidebar {position: fixed; width: 270px; height: 100vh; top: 0; background: #333; padding-top: 50px; color: #fff;}
+#content {margin-left: 270px; background: #fff;}
+
+/* Sidebar */
+#sidebar a {color: #fff;}
+#sidebar p {margin-bottom: 20px;}
+.logo {padding: 0 15px;}
 .logo img {width: 375px;}
-.main-menu {padding-right: 5%;}
-/* Headline */
-.headline {color: #fff; width: 40vw; margin: 125px auto 0; text-align: center;}
-/************ End of Header **************/
+.main-menu {padding-top: 25px;}
+.nav > li {display: block; background: transparent; text-align: center; transition: all 0.3s ease-in-out 0s;}
+.nav > li:hover {background: #A70334;}
+.nav > li > a {color: #fff; font-size: 18px; font-weight: 300; padding: 15px 0px;}
+.nav > li > a:focus, .nav > li > a:hover {background: transparent;}
+.nav > li.facebook-icon {}
+.nav > li.facebook-icon > a i {font-size: 26px;}
+.contact-info {padding: 15px; text-align: center;}
 
 /* All Sections */
-section {padding: 75px 0; margin-bottom: 250px;}
+section {padding: 75px 0; min-height: 100vh;}
+section h2, footer h2 {font-size: 2.5em; text-align: center; margin-bottom: 40px;}
 section img {max-width: 100%; height: auto;}
 
+/* Intro Section */
+#intro {background: url('images/intro.jpg') no-repeat fixed center / cover; display: flex; align-items: center; text-align: center;}
+#intro h2 {color: #fff; text-shadow: 0px 2px 20px rgba(0,0,0,.75); font-size: 2.3em; line-height: 1.8em; margin-bottom: 30px;}
+
 /* About Section */
-#about {background: #fefefe;}
+#about {text-align: center;}
+#about p {margin-bottom: 40px;}
+.about-sections img {max-height: 280px;}
+.about-sections > div {margin-bottom: 30px;}
 
 /* Projects Section */
-#projects {background: url('images/squared_metal.png') repeat; color: #fff;}
-.project-item {position: relative; width: 33.3333%;}
-.project-item h4 {position: absolute; bottom: 0; width: 100%; text-align: center; color: #fff; letter-spacing: 1px;}
+#projects {background:  url('images/concrete-bg.jpg') no-repeat fixed center / cover;}
+#projects h2 {text-shadow: 1px 3px 3px rgba(255,255,255,0.85);}
+.project-item {margin-bottom: 25px;}
+.project-item:nth-child(3n) {margin-right: 0;}
+.project-content {position: relative;}
+.project-content h4 {text-align: center; color: #fff; letter-spacing: 1px; background: rgba(0,0,0,.75); position: absolute; bottom: 0; width: 100%; padding: 10px 0;}
 
 /* Reviews Section */
-#reviews {background: #A70334; color: #fff;}
-.review {padding: 0 5%;}
+#reviews {background: rgba(171, 5, 52, 1) url('images/hammer-bg.png') no-repeat fixed center / cover; color: #fff; position: relative; text-shadow: 2px 4px 3px rgba(0,0,0,0.85);}
+.reviews {position: absolute; top: 50%; left: 0%; transform:translate(0%, -50%); -webkit-transform:translate(0%, -50%); padding: 0 45px;}
+#reviews h2 {text-align: center;}
 /* Slick Slider */
 .slick-prev, .slick-next {height: 40px;}
 .slick-prev:before, .slick-next:before {font-family: 'FontAwesome'; font-size: 36px; color: #fff;}
 .slick-prev:before {content: "\f104";}
 .slick-next::before {content: "\f105";}
 
-
-footer {padding: 75px 0; background: #000; color: #fff;}
-
-
+/* Footer */
+footer {padding: 40px 0 75px; background: url('images/concrete-bg.jpg') no-repeat fixed center / cover; min-height: 100vh; text-shadow: 2px 4px 3px rgba(0,0,0,0.85);}
+footer h2 {text-shadow: 1px 3px 3px rgba(255,255,255,0.85);}
+footer textarea.form-control {height: 175px;}
 
 
 /* =============== Retina =============== */

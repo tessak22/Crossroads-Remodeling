@@ -32,9 +32,9 @@ $('.reviews').slick({
 });
 
 //Initiate Masonry for Project Grid
-$('.projects').masonry({
-  itemSelector: '.project-item',
-});
+//$('.projects').masonry({
+//  itemSelector: '.project-item',
+//});
 
 
 // Animate page bookmarks

@@ -30,32 +30,28 @@
 </head>
 
 <body>
-	<header>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="logo col-sm-4">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img src="<?php bloginfo( 'template_url' ); ?>/images/logo.png">
-					</a>
-				</div>
-				<div class="main-menu col-sm-8">
-					<ul class="nav">
-						<li><a href="#about">About</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#reviews">Reviews</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
+	<div id="site-container"> <!-- closes in footer.php-->
+		<div id="sidebar">
+			<div class="logo">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<img src="<?php bloginfo( 'template_url' ); ?>/images/logo.png">
+				</a>
 			</div>
-			<div class="row">
-				<div class="headline">
-					<h2>Pharetra Amet Sit</h2>
-					<h3>Porta Nullam Fusce Inceptos</h3>
-					<a class="btn btn-default" href="#about">Learn More</a>
-				</div>
+			<div class="main-menu">
+				<ul class="nav">
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#reviews">Reviews</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li class="facebook-icon"><a href="https://facebook.com/crossroadsremodeling/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				</ul>
 			</div>
-		</div><!--/.container-fluid -->
-	</header>
+			<div class="contact-info">
+				<p>7256 Maciver Avenue NE<br>Albertville, MN 55301</p>
+				<p><a href="tel:7637779442">(763) 777-9442</a></p>
+				<p><a href="mailto:crossroadsremodelingllc@gmail.com">Email Us</a></p>
+			</div>
+		</div>
 
 
-	<div id="content">
+	
