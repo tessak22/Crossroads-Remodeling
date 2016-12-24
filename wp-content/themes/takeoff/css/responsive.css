@@ -6,7 +6,6 @@
 	.reviews {position: relative; top: 0; transform: none; width: 85%; margin: 0 auto;}
 	#intro {min-height: 100vh;}
 	section, footer {min-height: 1px;}
-	section, footer {background-attachment: inherit;}
 }
 
 @media only screen and (max-width: 480px) {
