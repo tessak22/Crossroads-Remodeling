@@ -29,7 +29,6 @@ get_header(); ?>
         }
         ?>
     </div>
-    <?php get_sidebar(); ?>
 </div>
 
 <?php get_footer(); ?>
