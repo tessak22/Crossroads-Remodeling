@@ -486,6 +486,7 @@ section img {max-width: 100%; height: auto;}
 /* About Section */
 #about {text-align: center;}
 #about p {margin-bottom: 40px;}
+.about-sections {display: flex; flex-wrap: wrap; flex-direction: row; align-items: top; flex-flow: row wrap; align-content: flex-end;}
 .about-sections img {max-height: 280px;}
 .about-sections > div {margin-bottom: 30px;}
 
