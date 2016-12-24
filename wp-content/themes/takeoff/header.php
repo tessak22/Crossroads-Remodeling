@@ -50,6 +50,7 @@
 				<p>7256 Maciver Avenue NE<br>Albertville, MN 55301</p>
 				<p><a href="tel:7637779442">(763) 777-9442</a></p>
 				<p><a href="mailto:crossroadsremodelingllc@gmail.com">Email Us</a></p>
+				<p class="site-credits"><a href="http://tessakriesel.com" target="_blank">Site Credits</a>
 			</div>
 		</div>
 

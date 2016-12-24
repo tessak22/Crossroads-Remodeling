@@ -489,6 +489,7 @@ section img {max-width: 100%; height: auto;}
 .about-sections {display: flex; flex-wrap: wrap; flex-direction: row; align-items: top; flex-flow: row wrap; align-content: flex-end;}
 .about-sections img {max-height: 280px;}
 .about-sections > div {margin-bottom: 30px;}
+.about-sections h3 {margin-bottom: 15px;}
 
 /* Projects Section */
 #projects {background:  url('images/concrete-bg.jpg') no-repeat fixed center / cover;}
@@ -511,7 +512,7 @@ section img {max-width: 100%; height: auto;}
 footer {padding: 40px 0 75px; background: url('images/concrete-bg.jpg') no-repeat fixed center / cover; min-height: 100vh; text-shadow: 2px 4px 3px rgba(0,0,0,0.85);}
 footer h2 {text-shadow: 1px 3px 3px rgba(255,255,255,0.85);}
 footer textarea.form-control {height: 175px;}
-
+.site-credits a {color: #999 !important; font-size: 12px;}
 
 /* =============== Retina =============== */
 @media

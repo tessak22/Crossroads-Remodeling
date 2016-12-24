@@ -7,3 +7,8 @@
 	#intro {min-height: 100vh;}
 	section, footer {min-height: 1px;}
 }
+
+@media only screen and (max-width: 480px) {
+	#intro h2 {font-size: 1.75em;}
+	section h2, footer h2 {font-size: 1.75em;}
+}
