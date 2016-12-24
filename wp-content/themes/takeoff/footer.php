@@ -13,7 +13,7 @@
 
 	<footer id="contact" class="footer" role="contentinfo">
 		<div class="container-fluid">
-			<div class="contact-area">
+			<div class="contact-area col-sm-10 col-sm-offset-1">
 				<h2>Reach Out to Us</h2>
 				<?php echo do_shortcode( '[contact-form-7 id="35" title="Contact Us"]' ); ?>
 			</div>
