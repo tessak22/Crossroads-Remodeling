@@ -12,6 +12,16 @@
 ?>
 
 	<footer id="contact" class="footer" role="contentinfo">
+		<div class="certified">
+			<div class="container-fluid">
+				<div class="col-md-8 col-md-offset-2">
+					<ul>
+						<li class="col-sm-6 text-center"><a href="http://www.nadra.org/Minnesota/" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/images/nadra.png"></a></li>
+						<li class="col-sm-6 text-center"><a href="https://www.fiberondecking.com/start-your-project/find-a-deck-builder/contractor-profile/21952" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/images/fiberon.png"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<div class="container-fluid">
 			<div class="contact-area col-sm-10 col-sm-offset-1">
 				<h2>Reach Out to Us</h2>

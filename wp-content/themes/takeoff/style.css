@@ -508,8 +508,12 @@ section img {max-width: 100%; height: auto;}
 .slick-prev:before {content: "\f104";}
 .slick-next::before {content: "\f105";}
 
+.certified {padding: 20px 0; background: #fefefe; width: 100%; margin-bottom: 40px;}
+.certified ul {list-style: none; overflow: hidden;}
+.certified li {display: inline-block;}
+
 /* Footer */
-footer {padding: 40px 0 75px; background: url('images/concrete-bg.jpg') no-repeat fixed center / cover; min-height: 100vh; text-shadow: 2px 4px 3px rgba(0,0,0,0.85);}
+footer {padding: 0px 0 75px; background: url('images/concrete-bg.jpg') no-repeat fixed center / cover; min-height: 100vh; text-shadow: 2px 4px 3px rgba(0,0,0,0.85);}
 footer h2 {text-shadow: 1px 3px 3px rgba(255,255,255,0.85);}
 footer textarea.form-control {height: 175px;}
 .site-credits a {color: #999 !important; font-size: 12px;}
